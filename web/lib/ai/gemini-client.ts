@@ -3,7 +3,7 @@ import { buildRankingPrompt, type AiRankingResult } from "./prompt-templates";
 
 const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
 const GEMINI_MODEL =
-  process.env.GEMINI_MODEL ?? "gemini-1.5-flash"; // can be overridden if needed
+  process.env.GEMINI_MODEL ?? "gemini-2.0-flash"; // same default as Streamlit app
 
 type GenerateContentResponse = {
   candidates?: Array<{
