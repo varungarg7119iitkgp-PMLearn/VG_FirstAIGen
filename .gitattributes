@@ -1,0 +1,25 @@
+# Normalize line endings: store as LF in repo (cross-platform consistency).
+# Git will convert to CRLF on checkout on Windows when core.autocrlf is true.
+* text=auto eol=lf
+
+# Explicitly treat as text (normalize)
+*.json text
+*.md text
+*.py text
+*.ts text
+*.tsx text
+*.js text
+*.css text
+*.html text
+*.toml text
+*.yml text
+*.yaml text
+
+# Binary files: do not modify
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.woff binary
+*.woff2 binary
